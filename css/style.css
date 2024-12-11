@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Anton SC", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(-25deg,white 80%, rgb(197, 197, 197));
+}
+
+#homeImage {
+    position: fixed;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background-image: url(../img/home.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    rotate: 0deg;
+    z-index: 0;
+    animation: homeImage 1s ease, upDown 3s ease-in-out infinite alternate 1s;
+}
+
+#homeBackground {
+    position: fixed;
+    right: -25%;
+    width: 120vw;
+    height: 90vh;
+    background-color: brown;
+    background-image: linear-gradient(to right, brown 65%, rgb(255, 56, 56));
+    rotate: -60deg;
+    z-index: 1;
+    opacity: 99%;
+    bottom: -10vh;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.171);
+    animation: homeBackground 0.8s ease;
+}
+
+#starBackground {
+    position: fixed;
+    right: -60%;
+    bottom: 30%;
+    width: 100vw;
+    height: 50vh;
+    rotate: -60deg;
+    opacity: 90%;
+    background-color: rgb(163, 24, 24);
+    animation: starBackground 1s ease;
+}
+
+#sunContainer {
+    position: fixed;
+    border-radius: 100%;
+    border: dashed 15px brown;
+    bottom: 35%;
+    left: 2%;
+    z-index: -1;
+    padding: 0.5%;
+    animation: sun 0.5s linear, sunContainer 7s linear infinite;
+}
+
+#sun {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: rgb(255, 36, 36);
+    box-shadow: 0px 0px 100px rgba(255, 44, 44, 0.747);
+    border: solid 10px rgb(255, 63, 63);
+    animation: sun 0.5s linear;
+}
+
+#locationTitle {
+    position: fixed;
+    rotate: 90deg;
+    font-size: 48vh;
+    z-index: -2;
+    left: -15%;
+    top: 25%;
+    bottom: 25%;
+    color: rgb(180, 180, 180);
+    animation: locationTitle 1.2s ease;
+}
+
+
+@keyframes homeImage {
+    0% {
+        rotate: 70deg;
+        transform: translateX(-100%) translateY(-80%);
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
+
+@keyframes starBackground {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-3%);
+    }
+}
+
+@keyframes homeBackground {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes sun {
+    0% {
+        scale: 50%;
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes sunContainer {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes locationTitle {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.circles{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    rotate: 180deg;
+    z-index: 3;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 10px;
+    height: 20px;
+    background: rgba(255, 116, 146, 0.144);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 40px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 10px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 10px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 30px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 10px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 55px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 75px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 12px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 7px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 75px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 50%;
+    }
+
+    100%{
+        transform: translateY(-80vh) translateX(20vw) rotate(720deg);
+        opacity: 0;
+        border-radius: 100%;
+    }
+
+}
