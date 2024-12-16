@@ -295,9 +295,9 @@ body {
     cursor: pointer;
     background: none;
     border: none;
-    color: rgb(237, 118, 118);
     animation: buttonSpawn 0.8s ease-in-out;
     transition: all 0.2s;
+    color: rgb(255, 135, 135);
 }
 
 #butonsContainer > button:hover {
@@ -337,7 +337,8 @@ body {
     visibility: hidden;
     clip-path: polygon(100% 0, 100% 100%, 0% 100%);
     background-color: rgba(255, 255, 255, 0);
-    transition: all 0.2s;
+    transition: all 0.4s;
+    rotate: -4deg;
 }
 
 #butonDecorations > section:nth-child(1) {
@@ -355,22 +356,19 @@ body {
 
 #butonsContainer:has(button:nth-child(1):hover) ~ #butonDecorations > section:nth-child(1) {
     visibility: visible;
-    background-color: rgba(255, 255, 255, 0.722);
-    rotate: -3deg;
+    background-color: rgb(255, 180, 180);
     animation: textDecoration 1s ease-in-out infinite alternate;
 }
 
 #butonsContainer:has(button:nth-child(2):hover) ~ #butonDecorations > section:nth-child(2) {
     visibility: visible;
-    background-color: rgba(255, 255, 255, 0.722);
-    rotate: -3deg;
+    background-color: rgb(255, 180, 180);
     animation: textDecoration 1s ease-in-out infinite alternate;
 }
 
 #butonsContainer:has(button:nth-child(3):hover) ~ #butonDecorations > section:nth-child(3) {
     visibility: visible;
-    background-color: rgba(255, 255, 255, 0.722);
-    rotate: -3deg;
+    background-color: rgb(255, 180, 180);
     animation: textDecoration 1s ease-in-out infinite alternate;
 }
 
