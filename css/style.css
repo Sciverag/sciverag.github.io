@@ -584,3 +584,27 @@ body {
         transform: translateX(0%);
     }
 }
+
+#selectedProyect {
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: fixed;
+    z-index: 4;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+}
+
+#proyectTitle {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: red;
+}
+
+#proyectTitle {
+    
+}

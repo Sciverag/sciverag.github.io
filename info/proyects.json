@@ -1,41 +1,49 @@
 [
     {
         "name": "Modpack Page",
-        "type": "Personal"
+        "type": "Personal",
+        "techs": ["JavaScript","CSS","HTML"]
     },
 
     {
         "name": "Persona Researcher",
-        "type": "Client"
+        "type": "Client",
+        "techs": ["JavaScript","CSS","HTML"]
     },
 
     {
         "name": "Event Calendar",
-        "type": "Client"
+        "type": "Client",
+        "techs": ["JavaScript","CSS","HTML"]
     },
 
     {
         "name": "F1 Start Timer",
-        "type": "Client"
+        "type": "Client",
+        "techs": ["JavaScript","CSS","HTML"]
     },
 
     {
         "name": "CSS Calendar",
-        "type": "Design"
+        "type": "Design",
+        "techs": ["CSS","HTML"]
     },
 
     {
         "name": "Choose your Fighter",
-        "type": "Design"
+        "type": "Design",
+        "techs": ["CSS","HTML"]
     },
 
     {
         "name": "Bootstrap Page 2.0",
-        "type": "Design"
+        "type": "Design",
+        "techs": ["CSS","HTML"]
     },
 
     {
         "name": "Loading Screen",
-        "type": "Design"
+        "type": "Design",
+        "techs": ["CSS","HTML"]
     }
 ]
