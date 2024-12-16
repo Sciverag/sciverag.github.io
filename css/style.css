@@ -11,6 +11,11 @@ body {
     background-image: linear-gradient(-25deg,white 80%, rgb(197, 197, 197));
 }
 
+#homeImage:is(.reverse){
+    display: none;
+    animation: homeImage 1s ease reverse forwards;
+}
+
 #homeImage {
     position: fixed;
     top: 0;
@@ -23,6 +28,11 @@ body {
     rotate: 0deg;
     z-index: 0;
     animation: homeImage 1s ease, upDown 3s ease-in-out infinite alternate 1s;
+}
+
+#homeBackground:is(.reverse){
+    display: none;
+    animation: homeBackground 0.8s ease reverse forwards;
 }
 
 #homeBackground {
@@ -40,6 +50,11 @@ body {
     animation: homeBackground 0.8s ease;
 }
 
+#starBackground:is(.reverse){
+    display: none;
+    animation: starBackground 0.6s ease reverse forwards;
+}
+
 #starBackground {
     position: fixed;
     right: -60%;
@@ -50,6 +65,16 @@ body {
     opacity: 90%;
     background-color: rgb(163, 24, 24);
     animation: starBackground 1s ease;
+}
+
+#sunContainer:is(.reverse){
+    display: none;
+    animation: sun 0.5s linear reverse forwards;
+}
+
+#sun:is(.reverse){
+    display: none;
+    animation: sun 0.5s linear reverse forwards;
 }
 
 #sunContainer {
@@ -71,6 +96,11 @@ body {
     box-shadow: 0px 0px 100px rgba(255, 44, 44, 0.747);
     border: solid 10px rgb(255, 63, 63);
     animation: sun 0.5s linear;
+}
+
+#locationTitle:is(.reverse) {
+    display: none;
+    animation: locationTitle 1s ease reverse forwards;
 }
 
 #locationTitle {
@@ -134,6 +164,7 @@ body {
     }
 
     100% {
+        scale: 100%;
         opacity: 100%;
     }
 }
@@ -150,10 +181,12 @@ body {
 
 @keyframes locationTitle {
     0% {
+        opacity: 0%;
         transform: translateY(100%);
     }
 
     100% {
+        opacity: 100%;
         transform: translateY(0%);
     }
 }
@@ -175,7 +208,7 @@ body {
     list-style: none;
     width: 10px;
     height: 20px;
-    background: rgba(255, 116, 146, 0.144);
+    background: rgba(255, 116, 146, 0.185);
     animation: animate 25s linear infinite;
     bottom: -150px;
     
@@ -264,7 +297,7 @@ body {
     0%{
         transform: translateY(0) translateX(0) rotate(0deg);
         opacity: 1;
-        border-radius: 50%;
+        border-radius: 30%;
     }
 
     100%{
@@ -286,6 +319,11 @@ body {
     top: 10%;
     z-index: 4;
     transform: skew(-20deg);
+}
+
+#butonsContainer:is(.reverse) > button {
+    display: none;
+    animation: buttonSpawn 0.8s ease-in-out reverse forwards;
 }
 
 
@@ -380,4 +418,191 @@ body {
     100% {
         transform: translateX(2vw) translateY(-1vh);
     }
+}
+
+#proyectsBackground {
+    position: fixed;
+    width: 120vw;
+    height: 90vh;
+    left: -50%;
+    top: -20%;
+    background-color: brown;
+    background-image: linear-gradient(to right, brown 65%, rgb(255, 56, 56));
+    rotate: -40deg;
+    z-index: 1;
+    opacity: 99%;
+    bottom: -10vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+    animation: homeBackground 0.8s ease;
+}
+
+#proyectsBackgroundBottom {
+    position: fixed;
+    right: -60%;
+    bottom: 0%;
+    width: 100vw;
+    height: 60vh;
+    rotate: -40deg;
+    background-image: linear-gradient(to right, brown 65%, rgb(255, 56, 56));
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+    animation: starBackground 1s ease;
+}
+
+#proyectsTitle {
+    position: fixed;
+    rotate: -40deg;
+    font-size: 23vh;
+    z-index: -2;
+    bottom: 18%;
+    opacity: 0%;
+    right: -5%;
+    color: rgb(180, 180, 180);
+    animation: locationTitle 1.2s ease forwards;
+    animation-delay: 0.15s;
+}
+
+#proyectsList {
+    position: fixed;
+    left: 4%;
+    top: 10%;
+    overflow-x: visible;
+    animation: proyectList 0.7s ease;
+    z-index: 4;
+}
+
+#proyectsList > h2 {
+    font-size: 10vh;
+    letter-spacing: 0.3vw;
+    transform: skew(-6deg);
+    color: rgb(224, 224, 224);
+}
+
+#proyectContainer {
+    display: flex;
+    direction: rtl;
+    padding: 1%;
+    position: relative;
+    left: 6%;
+    flex-direction: column;
+    width: 30vw;
+    height: 65vh;
+    overflow-x: visible;
+    overflow-y: scroll;
+    transform: skew(10deg);
+}
+
+.proyect {
+    background-color: rgb(104, 19, 19);
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 15vh;
+    margin-bottom: 1%;
+    opacity: 0%;
+    animation: proyectSpawn 0.5s ease-in-out forwards;
+    animation-delay: 0.4s;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.proyect > p {
+    text-decoration: none;
+    font-size: 3vh;
+    width: 90%;
+    text-align: center;
+    padding: 0.5%;
+    margin-bottom: 4%;
+    transition: all 0.2s;
+    background-color: rgb(255, 112, 112);
+    color: rgb(104, 19, 19);
+}
+
+.proyect > h2 {
+    font-size: 2.8vh;
+    color: rgb(255, 112, 112);
+    letter-spacing: 0.3vw;
+    width: 90%;
+    transition: all 0.2s;
+    text-align: end;
+}
+
+.proyect:hover {
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 5px rgb(104, 0, 0);
+    scale: 110%;
+}
+
+.proyect:hover > p {
+    background-color: rgb(19, 19, 19);
+    color: whitesmoke;
+}
+
+.proyect:hover > h2 {
+    color: rgb(19, 19, 19);
+}
+
+::-webkit-scrollbar {
+    scrollbar-width: thin;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 54, 54);
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(255, 38, 38);
+}
+
+
+@keyframes proyectList {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes proyectSpawn {
+    0% {
+        opacity: 0%;
+        scale: 90%;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 100%;
+        scale: 100%;
+        transform: translateX(0%);
+    }
+}
+
+#selectedProyect {
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: fixed;
+    z-index: 4;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+}
+
+#proyectTitle {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: red;
+}
+
+#proyectTitle {
+    
 }
