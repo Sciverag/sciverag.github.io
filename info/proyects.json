@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Modpack Page",
+        "type": "Personal"
+    },
+
+    {
+        "name": "Persona Researcher",
+        "type": "Client"
+    },
+
+    {
+        "name": "Event Calendar",
+        "type": "Client"
+    },
+
+    {
+        "name": "F1 Start Timer",
+        "type": "Client"
+    },
+
+    {
+        "name": "CSS Calendar",
+        "type": "Design"
+    },
+
+    {
+        "name": "Choose your Fighter",
+        "type": "Design"
+    },
+
+    {
+        "name": "Bootstrap Page 2.0",
+        "type": "Design"
+    },
+
+    {
+        "name": "Loading Screen",
+        "type": "Design"
+    }
+]
