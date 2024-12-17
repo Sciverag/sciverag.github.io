@@ -37,7 +37,7 @@ body {
 
 #homeBackground {
     position: fixed;
-    right: -25%;
+    left: 7.5%;
     width: 120vw;
     height: 90vh;
     background-color: brown;
@@ -328,7 +328,7 @@ body {
 
 
 #butonsContainer > button {
-    font-size: 130px;
+    font-size: 13vh;
     height: 100%;
     cursor: pointer;
     background: none;
@@ -461,11 +461,15 @@ body {
     animation-delay: 0.15s;
 }
 
+#proyectsList:is(.reverse){
+    display: none;
+    animation: proyectList 0.7s ease reverse forwards;
+}
+
 #proyectsList {
     position: fixed;
     left: 4%;
     top: 10%;
-    overflow-x: visible;
     animation: proyectList 0.7s ease;
     z-index: 4;
 }
@@ -486,7 +490,7 @@ body {
     flex-direction: column;
     width: 30vw;
     height: 65vh;
-    overflow-x: visible;
+    overflow-x: hidden;
     overflow-y: scroll;
     transform: skew(10deg);
 }
@@ -561,7 +565,7 @@ body {
 
 @keyframes proyectList {
     0% {
-        transform: translateX(-150%);
+        transform: translateX(-250%);
     }
 
     100% {
@@ -584,25 +588,191 @@ body {
 }
 
 #selectedProyect {
-    width: 90vw;
-    height: 90vh;
-    display: grid;
+    width: 100vw;
+    height: 100vh;
+    display: none;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     position: fixed;
     z-index: 4;
-    top: 5%;
-    bottom: 5%;
-    left: 5%;
-    right: 5%;
+}
+
+#proyectTitle:is(.reverse){
+    display: none;
+    animation: leftRight 0.5s ease forwards reverse;
 }
 
 #proyectTitle {
     grid-column: 1;
     grid-row: 1;
-    background-color: red;
+    animation: leftRight 0.5s ease forwards;
 }
 
-#proyectTitle {
-    
+#proyectTitle > h2 {
+    font-size: 8vh;
+    letter-spacing: 1.5vw;
+    position: relative;
+    top: 10%;
+    transform: skew(-10deg);
+    color: whitesmoke;
+}
+
+#proyectTitle > div {
+    position: relative;
+    background-color: whitesmoke;
+    transform: skew(-15deg);
+    width: 110%;
+    left: -4%;
+    height: 55%;
+    padding: 1%;
+}
+
+#proyectTitle > div > #name {
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -1%;
+    font-size: 3vh;
+    line-height: normal;
+    color: whitesmoke;
+    height: 30%;
+    margin-top: 1%;
+}
+
+#proyectTitle > div > #type {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    left: -1%;
+    transform: skew(-5deg);
+    font-size: 4vh;
+    line-height: normal;
+    height: 100%;
+}
+
+#proyectTechs:is(.reverse){
+    display: none;
+    animation: leftRight 0.5s ease reverse forwards;
+}
+
+#proyectTechs {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    animation: leftRight 0.5s ease;
+}
+
+#proyectTechs > li {
+    margin-left: 10%;
+    background-color: rgb(204, 62, 62);
+    border-radius: 100px;
+    padding: 1%;
+    font-size: 2.5vh;
+    text-align: center;
+    width: 40%;
+    cursor: help;
+    transition: all 0.2s;
+}
+
+#proyectTechs > li:hover {
+    background-color: rgb(17, 17, 17);
+    color: whitesmoke;
+}
+
+#proyectDescription:is(.reverse){
+    display: none;
+    animation: rightLeft 0.5s ease forwards reverse;
+}
+
+#proyectDescription {
+    grid-column: 3;
+    grid-row: 3;
+    height: 60%;
+    align-self: center;
+    margin-right: 2%;
+    background-color: rgb(124, 12, 12);
+    box-shadow: 0px 0px 5px rgb(26, 13, 13);
+    padding: 1.5%;
+    border-radius: 5px;
+    color: whitesmoke;
+    text-wrap: pretty;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rightLeft 0.5s ease;
+}
+
+#proyectImage:is(.reverse){
+    display: none;
+    animation: rightLeft 0.5s ease forwards reverse;
+}
+
+#proyectImage {
+    background-color: black;
+    grid-column: 2 / 4;
+    grid-row: 2;
+    width: 50vw;
+    height: 45vh;
+    box-shadow: 0px 0px 5px rgb(43, 23, 23);
+    justify-self: end;
+    margin-right: 2%;
+    background-image: url(../img/modpack.png);
+    background-position: center;
+    background-size: cover;
+    border: solid 5px brown;
+    border-radius: 5px;
+    animation: rightLeft 0.5s ease;
+}
+
+#selectedProyect > button:is(.reverse){
+    display: none;
+    animation: rightLeft 0.5s ease forwards reverse;
+}
+
+#selectedProyect > button {
+    grid-column: 3;
+    border-radius: 100%;
+    width: 5vw;
+    height: 5vw;
+    padding: 1%;
+    font-size: 4vh;
+    justify-self: end;
+    background: none;
+    margin-right: 1%;
+    margin-top: 1%;
+    border: none;
+    animation: rightLeft 0.5s ease;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#selectedProyect > button:hover {
+    background-color: rgb(235, 234, 234);
+}
+
+@keyframes leftRight {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes rightLeft {
+    0% {
+        transform: translateX(150%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }

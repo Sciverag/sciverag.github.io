@@ -2,48 +2,59 @@
     {
         "name": "Modpack Page",
         "type": "Personal",
-        "techs": ["JavaScript","CSS","HTML"]
+        "techs": ["JavaScript","CSS","HTML"],
+        "description": "Eldencraft II modpack website",
+        "image": "../img/modpack.png"
     },
 
     {
         "name": "Persona Researcher",
         "type": "Client",
-        "techs": ["JavaScript","CSS","HTML"]
+        "techs": ["JavaScript","CSS","HTML"],
+        "description": "An application that shows information about the 'Personas' from Persona 3 Reload using the Persona Compendium API",
+        "image": "../img/personaResearcher.png"
     },
 
     {
         "name": "Event Calendar",
         "type": "Client",
-        "techs": ["JavaScript","CSS","HTML"]
+        "techs": ["JavaScript","CSS","HTML"],
+        "description": "Calendar with login and event management",
+        "image": "../img/eventCalendar.png"
     },
 
     {
         "name": "F1 Start Timer",
         "type": "Client",
-        "techs": ["JavaScript","CSS","HTML"]
+        "techs": ["JavaScript","CSS","HTML"],
+        "description": "Simulator of the start of an F1 race"
     },
 
     {
         "name": "CSS Calendar",
         "type": "Design",
-        "techs": ["CSS","HTML"]
+        "techs": ["CSS","HTML"],
+        "description": "Calendar without features"
     },
 
     {
         "name": "Choose your Fighter",
         "type": "Design",
-        "techs": ["CSS","HTML"]
+        "techs": ["CSS","HTML"],
+        "description": "A simple web page with a fighter selection interface"
     },
 
     {
         "name": "Bootstrap Page 2.0",
         "type": "Design",
-        "techs": ["CSS","HTML"]
+        "techs": ["CSS","HTML"],
+        "description": "A simple web page with a Bootstrap layout"
     },
 
     {
         "name": "Loading Screen",
         "type": "Design",
-        "techs": ["CSS","HTML"]
+        "techs": ["CSS","HTML"],
+        "description": "Examples of different loading screens"
     }
 ]
