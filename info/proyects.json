@@ -4,7 +4,8 @@
         "type": "Personal",
         "techs": ["JavaScript","CSS","HTML"],
         "description": "Eldencraft II modpack website",
-        "image": "../img/modpack.png"
+        "image": "../img/modpack.png",
+        "url": "https://sciverag.github.io/PaginaModpack/"
     },
 
     {
@@ -12,7 +13,8 @@
         "type": "Client",
         "techs": ["JavaScript","CSS","HTML"],
         "description": "An application that shows information about the 'Personas' from Persona 3 Reload using the Persona Compendium API",
-        "image": "../img/personaResearcher.png"
+        "image": "../img/personaResearcher.png",
+        "url": "https://sciverag.github.io/Persona-Researcher/"
     },
 
     {
@@ -27,34 +29,39 @@
         "name": "F1 Start Timer",
         "type": "Client",
         "techs": ["JavaScript","CSS","HTML"],
-        "description": "Simulator of the start of an F1 race"
+        "description": "Simulator of the start of an F1 race",
+        "image": "../img/F1Start.png"
     },
 
     {
         "name": "CSS Calendar",
         "type": "Design",
         "techs": ["CSS","HTML"],
-        "description": "Calendar without features"
+        "description": "Calendar without features",
+        "image": "../img/calendar.png"
     },
 
     {
         "name": "Choose your Fighter",
         "type": "Design",
         "techs": ["CSS","HTML"],
-        "description": "A simple web page with a fighter selection interface"
+        "description": "A simple web page with a fighter selection interface",
+        "image": "../img/chFighter.png"
     },
 
     {
         "name": "Bootstrap Page 2.0",
         "type": "Design",
         "techs": ["CSS","HTML"],
-        "description": "A simple web page with a Bootstrap layout"
+        "description": "A simple web page with a Bootstrap layout",
+        "image": "../img/bootstrap.png"
     },
 
     {
         "name": "Loading Screen",
         "type": "Design",
         "techs": ["CSS","HTML"],
-        "description": "Examples of different loading screens"
+        "description": "Examples of different loading screens",
+        "image": "../img/loading.png"
     }
 ]

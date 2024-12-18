@@ -13,6 +13,8 @@ fetch("../info/proyects.json")
 .then(result => result.json())
 .then(data => showProyects(data));
 
+
+
 closeButton.addEventListener("click", () => {
     proyectsList.removeAttribute("class");
     proyectTitle.setAttribute("class","reverse");
@@ -65,6 +67,10 @@ function showProyects(proyects){
                 proyectTechs.appendChild(techLi);
             });
 
+            proyectImage.addEventListener("click", () => {
+                window.location.href = proyect.url;
+            })
+
             proyectsList.setAttribute("class","reverse");
             proyectsList.style.display = "none";
             proyectTitle.removeAttribute("class");
@@ -81,6 +87,7 @@ function showProyects(proyects){
                 proyectsList.style.display = "none";
             },750)
         })
+
 
         proyectConatainer.appendChild(proyectDiv);
     });
