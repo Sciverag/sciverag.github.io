@@ -22,7 +22,8 @@
         "type": "Client",
         "techs": ["JavaScript","CSS","HTML"],
         "description": "Calendar with login and event management",
-        "image": "../img/eventCalendar.png"
+        "image": "../img/eventCalendar.png",
+        "url": "https://sciverag.github.io/EventCalendar/"
     },
 
     {
@@ -30,7 +31,8 @@
         "type": "Client",
         "techs": ["JavaScript","CSS","HTML"],
         "description": "Simulator of the start of an F1 race",
-        "image": "../img/F1Start.png"
+        "image": "../img/F1Start.png",
+        "url": "https://sciverag.github.io/F1Start/"
     },
 
     {
@@ -38,7 +40,8 @@
         "type": "Design",
         "techs": ["CSS","HTML"],
         "description": "Calendar without features",
-        "image": "../img/calendar.png"
+        "image": "../img/calendar.png",
+        "url": "https://sciverag.github.io/Calendario/"
     },
 
     {
@@ -46,7 +49,8 @@
         "type": "Design",
         "techs": ["CSS","HTML"],
         "description": "A simple web page with a fighter selection interface",
-        "image": "../img/chFighter.png"
+        "image": "../img/chFighter.png",
+        "url": "https://sciverag.github.io/Choose-Your-Fighter/"
     },
 
     {
@@ -54,7 +58,8 @@
         "type": "Design",
         "techs": ["CSS","HTML"],
         "description": "A simple web page with a Bootstrap layout",
-        "image": "../img/bootstrap.png"
+        "image": "../img/bootstrap.png",
+        "url": "https://sciverag.github.io/Bootsrap-Simple-Page"
     },
 
     {
@@ -62,6 +67,7 @@
         "type": "Design",
         "techs": ["CSS","HTML"],
         "description": "Examples of different loading screens",
-        "image": "../img/loading.png"
+        "image": "../img/loading.png",
+        "url": "https://sciverag.github.io/Loading-Screens"
     }
 ]

@@ -89,8 +89,8 @@ body {
 }
 
 #sun {
-    width: 300px;
-    height: 300px;
+    width: 16vw;
+    height: 16vw;
     border-radius: 100%;
     background-color: rgb(255, 36, 36);
     box-shadow: 0px 0px 100px rgba(255, 44, 44, 0.747);
@@ -112,7 +112,7 @@ body {
     top: 25%;
     bottom: 25%;
     color: rgb(180, 180, 180);
-    animation: locationTitle 1.2s ease;
+    animation: locationTitle 1s ease;
 }
 
 
@@ -182,7 +182,7 @@ body {
 @keyframes locationTitle {
     0% {
         opacity: 0%;
-        transform: translateY(100%);
+        transform: translateY(300%);
     }
 
     100% {
@@ -420,6 +420,10 @@ body {
     }
 }
 
+#proyectsBackground:is(.reverse){
+    animation: homeBackground 0.8s ease reverse forwards;
+}
+
 #proyectsBackground {
     position: fixed;
     width: 120vw;
@@ -436,6 +440,10 @@ body {
     animation: homeBackground 0.8s ease;
 }
 
+#proyectsBackgroundBottom:is(.reverse){
+    animation: starBackground 1s ease reverse forwards;
+}
+
 #proyectsBackgroundBottom {
     position: fixed;
     right: -60%;
@@ -448,6 +456,10 @@ body {
     animation: starBackground 1s ease;
 }
 
+#proyectsTitle:is(.reverse){
+    animation: locationTitle 1s ease forwards reverse;
+}
+
 #proyectsTitle {
     position: fixed;
     rotate: -40deg;
@@ -457,7 +469,7 @@ body {
     opacity: 0%;
     right: -5%;
     color: rgb(180, 180, 180);
-    animation: locationTitle 1.2s ease forwards;
+    animation: locationTitle 1s ease forwards;
     animation-delay: 0.15s;
 }
 
@@ -729,6 +741,7 @@ body {
     border: solid 5px brown;
     border-radius: 5px;
     animation: rightLeft 0.5s ease;
+    cursor: pointer;
 }
 
 #selectedProyect > button:is(.reverse){
@@ -774,5 +787,58 @@ body {
 
     100% {
         transform: translateX(0%);
+    }
+}
+
+#backButton:is(.reverse) {
+    animation: rightLeft 0.3s ease reverse forwards;
+}
+
+#backButton {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 4;
+    font-size: 3vh;
+    letter-spacing: 0.5vw;
+    border: none;
+    background: none;
+    color: rgba(255, 190, 190, 0.726);
+    cursor: pointer;
+    transition: all 0.2s;
+    animation: rightLeft 0.5s ease;
+}
+
+#backIcon {
+    position: fixed;
+    bottom: -0.5%;
+    right: 0%;
+    z-index: 3;
+    font-size: 8vh;
+    letter-spacing: 0.5vw;
+    rotate: 180deg;
+    color: rgba(0, 0, 0, 0);
+    visibility: hidden;
+    transition: all 0.6s;
+}
+
+#backButton:hover {
+    scale: 110%;
+}
+
+#backButton:hover ~ #backIcon {
+    visibility: visible;
+    animation: backArrow 0.6s ease forwards;
+}
+
+@keyframes backArrow {
+    0%{
+        color: rgb(255, 255, 255);
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(100%);
+        color: rgba(0, 0, 0, 0);
     }
 }
