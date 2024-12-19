@@ -36,6 +36,15 @@
     },
 
     {
+        "name": "Pokemon Grid",
+        "type": "Design",
+        "techs": ["CSS","HTML","JavaScript"],
+        "description": "A page simulating a Pokemon game in a Gameboy Advance",
+        "image": "../img/pokemonGrid.png",
+        "url": "https://sciverag.github.io/Pokemon-Grid/"
+    },
+
+    {
         "name": "CSS Calendar",
         "type": "Design",
         "techs": ["CSS","HTML"],
