@@ -17,7 +17,7 @@ fetch("../info/proyects.json")
 .then(result => result.json())
 .then(data => showProyects(data));
 
-
+screen.orientation.lock("landscape");
 
 closeButton.addEventListener("click", () => {
     proyectsList.removeAttribute("class");

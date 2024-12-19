@@ -10,6 +10,8 @@ const sun = document.getElementById("sun");
 const buttonContainer = document.getElementById("butonsContainer");
 const buttonDecorations = document.getElementById("butonDecorations");
 
+screen.orientation.lock("landscape");
+
 proyectsButton.addEventListener("click", () => {
     nextPage("proyects");
 })
