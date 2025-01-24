@@ -36,6 +36,15 @@
     },
 
     {
+        "name": "JJBA HFTF Retro Page",
+        "type": "Design",
+        "techs": ["CSS","HTML","JavaScript"],
+        "description": "Menus inspired by the game Jojo's Bizarre Adventure Heritage for the future",
+        "image": "../img/retroPage.png",
+        "url": "https://sciverag.github.io/JojoHFTFSimulator"
+    },
+
+    {
         "name": "Pokemon Grid",
         "type": "Design",
         "techs": ["CSS","HTML","JavaScript"],
