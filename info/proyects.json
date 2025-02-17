@@ -36,6 +36,24 @@
     },
 
     {
+        "name": "Pirueta WebPage",
+        "type": "Design",
+        "techs": ["SCSS","HTML","JavaScript"],
+        "description": "Webpage of the restaurant franchise Pirueta",
+        "image": "../img/pirueta.png",
+        "url": "https://sciverag.github.io/ProyectoT2Interfaces/"
+    },
+
+    {
+        "name": "Curriculum SCSS",
+        "type": "Design",
+        "techs": ["SCSS","HTML","JavaScript"],
+        "description": "Dynamic Curriculum made with SCSS",
+        "image": "../img/curriculum.png",
+        "url": "https://sciverag.github.io/CurriculumSCSS/"
+    },
+
+    {
         "name": "JJBA HFTF Retro Page",
         "type": "Design",
         "techs": ["CSS","HTML","JavaScript"],
